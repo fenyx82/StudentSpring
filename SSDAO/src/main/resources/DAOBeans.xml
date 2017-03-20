@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+ 
+    <context:component-scan base-package="jbt.bean" />
+ 
+    <bean id="ssAddress" class="com.tc.ssdao.SSAddress" autowire="byType">
+        <property name="street" value="1234 Main St." />
+        <property name="city" value="Houston" />
+        <property name="zip" value="76541" />
+    </bean>
+ 
+    <bean id="ssGrade" class="com.tc.ssdao.SSGrade" autowire="byType">
+        <property name="subject" value="Computer Science" />
+        <property name="grade" value="B" />
+    </bean>
+</beans>
