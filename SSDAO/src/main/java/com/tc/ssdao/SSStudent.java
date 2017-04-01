@@ -21,6 +21,16 @@ public class SSStudent {
     String lName;
     String dOb;
 
+    public SSStudent() {
+    }
+
+    public SSStudent(String fName, String lName, String dOb) {
+        super();
+        this.fName = fName;
+        this.lName = lName;
+        this.dOb = dOb;
+    }
+
     public SSAddress getSsAddress() {
         return ssAddress;
     }
